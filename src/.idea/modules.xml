@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/.idea/djpitime.iml" filepath="$PROJECT_DIR$/.idea/djpitime.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/src.iml" filepath="$PROJECT_DIR$/.idea/src.iml" />
+>>>>>>> a30b9b90ebb12ce14419f19464085ae0d31b1a18
+    </modules>
+  </component>
+</project>

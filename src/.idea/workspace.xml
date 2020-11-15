@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="9b75b6c2-ecdd-4895-8642-244fbea0587b" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="ea0ea5c9-842f-4d4f-9b1c-7050450ad394" name="Default Changelist" comment="" />
+>>>>>>> a30b9b90ebb12ce14419f19464085ae0d31b1a18
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+<<<<<<< HEAD
+  <component name="FavoritesManager">
+    <favorites_list name="djpitime" />
+  </component>
+  <component name="ProjectId" id="1ZovORr1CV3bLF60amO1EWSZZiJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+=======
+  <component name="ProjectId" id="1ZoiKzhmkh3S4gPddnBnOpvAET4" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+>>>>>>> a30b9b90ebb12ce14419f19464085ae0d31b1a18
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+<<<<<<< HEAD
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+  </component>
+=======
+>>>>>>> a30b9b90ebb12ce14419f19464085ae0d31b1a18
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
+      <changelist id="9b75b6c2-ecdd-4895-8642-244fbea0587b" name="Default Changelist" comment="" />
+      <created>1585518228940</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585518228940</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+=======
+      <changelist id="ea0ea5c9-842f-4d4f-9b1c-7050450ad394" name="Default Changelist" comment="" />
+      <created>1585511824359</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585511824359</updated>
+    </task>
+    <servers />
+  </component>
+>>>>>>> a30b9b90ebb12ce14419f19464085ae0d31b1a18
+</project>
