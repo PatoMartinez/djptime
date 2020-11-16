@@ -49,7 +49,7 @@ RUN pip3 install pipenv
 #RUN pip install -r requirements.txt
 
 # Collect static files
-RUN python ./manage.py collectstatic --noinput
+RUN python manage.py collectstatic --noinput
 
 EXPOSE 8888
 CMD gunicorn djpitime.wsgi:application --bind 0.0.0.0:$PORT
