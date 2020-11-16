@@ -35,7 +35,7 @@ ENV PORT=8888
 # install only the base
 
 RUN pip install --upgrade pip
-COPY requirements.txt /app/requirements.txt
+COPY ./requirements.txt /app/requirements.txt
 RUN pip install -r requirements.txt
 
 # install environment dependencies
