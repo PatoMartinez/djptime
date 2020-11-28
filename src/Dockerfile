@@ -50,9 +50,9 @@ RUN pip3 install pipenv
 #RUN pip install -r requirements.txt
 
 # Collect static files
-RUN python manage.py collectstatic --noinput
+RUN python ../manage.py collectstatic --noinput
 
-RUN python manage.py migrate
+RUN python ../manage.py migrate
 
 EXPOSE 8888
 
