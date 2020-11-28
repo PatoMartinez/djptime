@@ -33,5 +33,4 @@ jobs:
         name: patomartz/djptime
         username: ${{ secrets.DOCKER_USER }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        tag_names: true
-
+        tags: "latest,another"
