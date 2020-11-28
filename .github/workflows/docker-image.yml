@@ -31,6 +31,6 @@ jobs:
       uses: minddocdev/docker-publish-action@master
       with:
         name: patomartz/djptime
-        username: ${{ secrets.DOCKER_USERNAME }}
+        username: ${{ secrets.DOCKER_USER }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
