@@ -30,7 +30,7 @@ jobs:
     - name: Publish to Registry
       uses: minddocdev/docker-publish-action@master
       with:
-        name: myDocker/repository
+        name: patomartz/djptime
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
