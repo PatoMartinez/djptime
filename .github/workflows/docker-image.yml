@@ -11,10 +11,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-          
+    - uses: actions/checkout@v2     
     - name: Build the Docker image
       run: docker build . --file ./src/Dockerfile --tag my-image-name:$(date +%s)
       
@@ -33,4 +31,5 @@ jobs:
         name: patomartz/djptime
         username: ${{ secrets.DOCKER_USER }}
         password: ${{ secrets.DOCKER_PASSWORD }}
+        file: ./src/Dockerfile
         tags: "latest,another"
