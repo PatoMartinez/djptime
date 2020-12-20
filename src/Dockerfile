@@ -1,6 +1,6 @@
 # Base Image
-FROM python:3.8-slim-buster
-#FROM python:3.8.0-alpine
+#FROM python:3.8-slim-buster
+FROM python:3.8.0-alpine
 
 # create and set working directory
 RUN mkdir /app
@@ -31,19 +31,17 @@ ENV PORT=8888
 #    apt-get clean && \
 #    rm -rf /var/lib/apt/lists/*
 
-
 # install only the base
 
-RUN pip install --upgrade pip
+RUN pip3 install --upgrade pip pipenv
 
 COPY ./requirements.txt /app/requirements.txt
 
 RUN pip install -r requirements.txt
 
 # install environment dependencies
-RUN pip3 install --upgrade pip
-
-RUN pip3 install pipenv
+#RUN pip3 install --upgrade pip pipenv
+#RUN pip3 install pipenv
 
 # Install project dependencies
 #RUN pipenv install --skip-lock --system --dev -r requirements.txt
@@ -56,6 +54,6 @@ RUN python manage.py migrate
 
 EXPOSE 8888
 
-CMD gunicorn djpitime.wsgi:application --bind 0.0.0.0:$PORT
+CMD gunicorn djpitime.wsgi:application --bind 0.0.0.0:$PORT --workers 4
 
 
