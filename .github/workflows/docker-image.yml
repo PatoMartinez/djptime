@@ -31,5 +31,5 @@ jobs:
         name: patomartz/djptime
         username: ${{ secrets.DOCKER_USER }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        file: ./src/Dockerfile
+        dockerfile: ./src/Dockerfile
         tags: "latest,another"
