@@ -26,10 +26,18 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
         
     - name: Publish to Registry
-      uses: minddocdev/docker-publish-action@master
+      #uses: minddocdev/docker-publish-action@master
+      #with:
+       # name: patomartz/djptime
+       # username: ${{ secrets.DOCKER_USER }}
+       # password: ${{ secrets.DOCKER_PASSWORD }}
+       # dockerfile: ./src/Dockerfile
+       # extratags: latest,newest
+
+    - uses: jerray/publish-docker-action@master
       with:
-        name: patomartz/djptime
-        username: ${{ secrets.DOCKER_USER }}
+        username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        dockerfile: ./src/Dockerfile
-        extratags: latest,newest
+        #registry: docker.pkg.github.com
+        repository: patomartz/djptime
+        tags: latest,newest,master
