@@ -32,4 +32,4 @@ jobs:
         username: ${{ secrets.DOCKER_USER }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         dockerfile: ./src/Dockerfile
-        buildargs: "latest,newest,master"
+        extratags: latest,newest
