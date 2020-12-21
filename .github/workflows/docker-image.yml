@@ -32,7 +32,7 @@ jobs:
         username: ${{ secrets.DOCKER_USER }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         file: ./src/Dockerfile
-        repository: patomartz/djptime:latest
+        repository: patomartz/djptime
         tags: latest,newest,master
         
     
