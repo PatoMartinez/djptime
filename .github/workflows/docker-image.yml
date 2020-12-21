@@ -31,9 +31,8 @@ jobs:
       with:
         username: ${{ secrets.DOCKER_USER }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        registry: docker.pkg.github.com
         file: ./src/Dockerfile
-        repository: patomartz/djptime
+        repository: patomartz/djptime:latest
         tags: latest,newest,master
         
     
