@@ -11,12 +11,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-          
+    - uses: actions/checkout@v2     
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build . --file ./src/Dockerfile --tag my-image-name:$(date +%s)
       
               
     - uses: actions/checkout@master
@@ -27,10 +25,14 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
         
+    
     - name: Publish to Registry
-      uses: minddocdev/docker-publish-action@master
+      uses: jerray/publish-docker-action@master
       with:
-        name: patomartz/djptime
         username: ${{ secrets.DOCKER_USER }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        tags: "latest,another"
+        file: ./src/Dockerfile
+        repository: patomartz/djptime
+        tags: latest,newest,master
+        
+    
