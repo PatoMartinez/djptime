@@ -48,9 +48,9 @@ RUN pip install -r requirements.txt
 #RUN pip install -r requirements.txt
 
 # Collect static files
-RUN python ./src/manage.py collectstatic --noinput
+RUN python manage.py collectstatic --noinput
 
-RUN python ./src/manage.py migrate
+RUN python manage.py migrate
 
 EXPOSE 8888
 
