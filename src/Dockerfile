@@ -54,6 +54,6 @@ RUN python ./src/manage.py migrate
 
 EXPOSE 8888
 
-CMD gunicorn djptime.wsgi:application --bind 0.0.0.0:$PORT --workers 4
+CMD gunicorn djpitime.wsgi:application --bind 0.0.0.0:$PORT --workers 4
 
 
