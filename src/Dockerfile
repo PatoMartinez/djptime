@@ -1,7 +1,6 @@
 # Base Image
 #FROM python:3.8-slim-buster
-#FROM python:3.8.0-alpine
-FROM alpine:3.14
+FROM python:3.8.0-alpine
 
 # create and set working directory
 RUN mkdir /app
@@ -58,6 +57,3 @@ RUN python ./src/manage.py migrate
 EXPOSE 8888
 
 CMD gunicorn djpitime.wsgi:application --bind 0.0.0.0:$PORT --workers 4
-
-
-
