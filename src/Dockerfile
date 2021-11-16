@@ -35,7 +35,7 @@ ENV PORT=8888
 
 #RUN pip3 install --upgrade pip pipenv
 
-RUN pip install --upgrade pip pipenv
+RUN pip3 install --upgrade pip pipenv
 
 COPY ./requirements.txt /app/requirements.txt
 
@@ -50,11 +50,9 @@ RUN pip install -r requirements.txt
 #RUN pip install -r requirements.txt
 
 # Collect static files
-#RUN python ./src/manage.py collectstatic --noinput
-RUN python ./djptime/src/manage.py collectstatic --noinput
+RUN python ./src/manage.py collectstatic --noinput
 
-#RUN python ./src/manage.py migrate
-RUN python ./djptime/src/manage.py migrate
+RUN python ./src/manage.py migrate
 
 EXPOSE 8888
 
