@@ -1,6 +1,7 @@
 # Base Image
 #FROM python:3.8-slim-buster
-FROM python:3.8.0-alpine
+#FROM python:3.8.0-alpine
+FROM alpine:3.14
 
 # create and set working directory
 RUN mkdir /app
