@@ -83,9 +83,9 @@ TEMPLATES = [
     },
 ]
 
-#WSGI_APPLICATION = 'djpitime.wsgi.application'
+WSGI_APPLICATION = 'djpitime.wsgi.application'
 
-WSGI_APPLICATION = 'djpitime.wsgi'
+#WSGI_APPLICATION = 'djpitime.wsgi'
 
 
 # Database
