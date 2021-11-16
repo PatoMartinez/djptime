@@ -60,5 +60,5 @@ EXPOSE 8888
 
 #CMD gunicorn djpitime.wsgi --bind 0.0.0.0:$PORT --workers 4
 
-CMD ["gunicorn", "--bind", "0.0.0.0:$PORT", "workers 4", "{djptime}.wsgi"]`
+CMD ["gunicorn", "--bind", "0.0.0.0:8888", "--workers", "4", "{djptime}.wsgi"]`
 
