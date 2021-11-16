@@ -34,7 +34,9 @@ ENV PORT=8888
 
 # install only the base
 
-RUN pip3 install --upgrade pip pipenv
+#RUN pip3 install --upgrade pip pipenv
+
+RUN pip install --upgrade pip pipenv
 
 COPY ./requirements.txt /app/requirements.txt
 
